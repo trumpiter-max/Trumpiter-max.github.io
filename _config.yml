@@ -103,17 +103,17 @@ analytics:
 # Site Author
 author:
   name             : "Trumpiter"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "resources/images/author/bio-photo.jpg"
   bio              : "A software and security engineer"
   location         : "Ho Chi Minh city - Viet Nam"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:huyhungvtu@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://trumpiter.id.vn"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -218,7 +218,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/HoChiMinh
 
 
 # Plugins (previously gems:)
@@ -275,15 +275,16 @@ compress_html:
   ignore:
     envs: development
 
-
+# Update collections and other paths here
 # Collections
 collections:
-  docs:
+  security-wiki:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  web-exploit:
     output: true
     permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -296,6 +297,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
+      toc: true
       share: true
       related: true
   # _pages
@@ -305,23 +307,27 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _portfolio
+  # _security-wiki
   - scope:
       path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
+      type: security-wiki
     values:
       layout: single
       read_time: false
       author_profile: false
       toc: true
       sidebar:
-        nav: "docs"
+        nav: "security-wiki"
+      share: true
+  # _web-exploit
+  - scope:
+      path: ""
+      type: web-exploit
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      toc: true
+      sidebar:
+        nav: "web-exploit"
       share: true

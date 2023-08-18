@@ -12,6 +12,18 @@ main:
     url: /collection/
 
 # side nav
+security-wiki:
+  - title: "Fundamental"
+  - title: "Blue team"
+    children:
+      - title: "1 - Phishing"
+        url: "/security-wiki/blue-team/phishing/"
+      - title: "2 - Impersonation"
+        url: "/security-wiki/blue-team/impersonation/"
+
+web-exploit:
+  - title: "Techniques"
+      
       
   
 
