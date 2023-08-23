@@ -2,7 +2,6 @@
 title: "Phising"
 permalink: /security-wiki/blue-team/phishing/
 excerpt: "Spoofing attacks"
-last_modified_at: 2023-08-18
 ---
 
 ## Terminology
@@ -32,9 +31,10 @@ last_modified_at: 2023-08-18
 
 ### Differnent bait
 
-#### Vishing 
+#### Vishing
 
 **Voice phishing** is done over the phone or voicemail with some common situations:
+
 - Spoofing caller ID.
 - Fake security checks or bank updates.
 - Spoofing government agency.
@@ -42,6 +42,7 @@ last_modified_at: 2023-08-18
 #### Smishing
 
 **SMS phishing** is done by text message with some common situations:
+
 - Forwards links or asks for personal information.
 - Credit offers and loans.
 - Profitable investment opportunity.
@@ -57,8 +58,3 @@ last_modified_at: 2023-08-18
 - Reconnaissance.
 - Background information.
 - Build believable pretext with above gatherd information.
-
-
-
-
-
