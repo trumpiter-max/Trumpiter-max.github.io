@@ -1,7 +1,7 @@
 ---
 title: "Impersonation"
 permalink: /security-wiki/blue-team/impersonation/
-excerpt: "Reconnaissance"
+excerpt: "Taking on the identity of an individual to get access into the system or communications protocol."
 ---
 
 ## Terminology

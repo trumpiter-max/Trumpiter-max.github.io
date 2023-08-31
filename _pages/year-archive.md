@@ -1,6 +1,7 @@
 ---
-title: "Posts by Year"
-permalink: /year-archive/
+title: "All posts"
+permalink: /
 layout: posts
-author_profile: true
+sidebar:
+    nav: "home-sidebar"
 ---

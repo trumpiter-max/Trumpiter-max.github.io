@@ -4,14 +4,23 @@ main:
     url: /about/
   - title: "Policy"
     url: /policy/
-  - title: "Post"
-    url: /year-archive/
   - title: "Category"
     url: /categories/
   - title: "Collection"
     url: /collection/
 
+
 # side nav
+home-sidebar:
+  - title: "Project management"
+    url: "/project-management/fundamental/project/"
+  - title: "Security wiki"
+    url: "/security-wiki/blue-team/phishing/"
+  - title: "Web exploit"
+    url: "/security-wiki/web-security/server-side/sql-injection/"
+  - title: "Malware analyze"
+    url: "/malware-analyze/fundamental/computer-architecture/"
+
 security-wiki:
   - title: "Fundamental"
   - title: "Blue team"
@@ -85,6 +94,20 @@ malware-analyze:
     children:
       title: "1 - Computer architecture"
       url: "/malware-analyze/fundamental/computer-architecture/"
+
+project-management:
+  - title: "Fundamental"
+    children:
+      - title: "1 - Project"
+        url: "/project-management/fundamental/project/"
+      - title: "2 - Agile"
+        url: "/project-management/fundamental/agile/"
+      - title: "3 - Scrum"
+        url: "/project-management/fundamental/scrum/"
+      - title: "4 - Kanban"
+        url: "/project-management/fundamental/kanban/"
+  - title: "Implement"
+    
 
       
       

@@ -1,7 +1,7 @@
 ---
 title: "Phising"
 permalink: /security-wiki/blue-team/phishing/
-excerpt: "Spoofing attacks"
+excerpt: "Sending a false email pretending to be legitimate to steal valuable information from the user."
 ---
 
 ## Terminology
