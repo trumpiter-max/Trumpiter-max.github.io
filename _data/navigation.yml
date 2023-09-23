@@ -14,7 +14,7 @@ home-sidebar:
   - title: "Project management"
     url: "/project-management/fundamental/project/"
   - title: "Security wiki"
-    url: "/security-wiki/blue-team/phishing/"
+    url: "/security-wiki/blue-team/typical-attack-techniques/"
   - title: "Web exploit"
     url: "/security-wiki/web-security/server-side/sql-injection/"
   - title: "Malware analyze"

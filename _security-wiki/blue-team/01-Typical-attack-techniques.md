@@ -1,6 +1,6 @@
 ---
 title: "Typical attack techniques"
-permalink: /security-wiki/blue-team/yypical-attack-techniques/
+permalink: /security-wiki/blue-team/typical-attack-techniques/
 excerpt: ""
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Project"
-permalink: /project-management/fundamental/project
+permalink: /project-management/fundamental/project/
 excerpt: "A group of tasks that need to complete to reach a clear result"
 ---
 
