@@ -1,10 +1,10 @@
 ---
-title: "Phising"
-permalink: /security-wiki/blue-team/phishing/
-excerpt: "Sending a false email pretending to be legitimate to steal valuable information from the user."
+title: "Typical attack techniques"
+permalink: /security-wiki/blue-team/yypical-attack-techniques/
+excerpt: ""
 ---
 
-## Terminology
+# Phishing
 
 - **Phishing** is the practice of sending fraudulent communications that appear to come from a *legitimate* and *reputable* source.
 - A spoofing social engineer attacks are ofter deliverd by email, phone, text, etc. to get *victims' access credentials* including user authentication, credit/debt card, and so on.
@@ -58,3 +58,33 @@ excerpt: "Sending a false email pretending to be legitimate to steal valuable in
 - Reconnaissance.
 - Background information.
 - Build believable pretext with above gatherd information.
+
+---
+
+# Impersonation
+
+- Attackers pretend to be someone they aren't to get details from *reconnaissance*.
+- Victim is someone higher in rank.
+- Throw tons of technical details around.
+
+## Eliciting information
+
+- Extract information from victims.
+- **Vishing (Voice phishing)** is seen regularly.
+- These are well-documented psychological techniques.
+
+## Identity fraud
+
+- Your *identity* can be used by others so you should keep personal information safe.
+- Attackers can get your identity to open an account in your name or to use your credit card information (**credit card fraud**).
+- Attackers gain access to your account or open new accounts (**bank fraud**).
+- Your information is used for loan or lease (**loan fraud**).
+- Attackers obtain benefits on your behalf (**government benefits fraud**).
+
+## How to protect
+
+- Never volunteer information.
+- Don't disclose personal details.
+- Always verify before revealing details.
+- Verification should be encouraged, specifically valuable information.
+

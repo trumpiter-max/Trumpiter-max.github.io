@@ -134,3 +134,15 @@ $(document).ready(function() {
     }
   });
 });
+
+// Add favicon to website
+const faviconTag = document.getElementById("faviconTag");
+const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+const changeFavicon = () => {
+  if (isDark.matches) faviconTag.href = "{{ "/assets/images/light.svg" | jsonify }}";
+  else faviconTag.href = "{{ "/assets/images/light.svg" | jsonify }}";
+};
+
+changeFavicon();
+setInterval(changeFavicon, 1000);

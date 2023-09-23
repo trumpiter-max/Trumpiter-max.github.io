@@ -9,7 +9,6 @@ main:
   - title: "Collection"
     url: /collection/
 
-
 # side nav
 home-sidebar:
   - title: "Project management"
@@ -22,13 +21,30 @@ home-sidebar:
     url: "/malware-analyze/fundamental/computer-architecture/"
 
 security-wiki:
-  - title: "Fundamental"
+  - title: "Operating system"
+    children:
+      - title: "1 - OS introduction"
+        url: "/security-wiki/operating-system/os-introduction/"
+      - title: "5 - Windows introduction"
+        url: "/security-wiki/operating-system/windows-introduction/"
+      - title: "10 - Linux introduction"
+        url: "/security-wiki/operating-system/linux-introduction/" 
+
+  - title: "Network"
+    children:
+      - title: "1 - Network introduction"
+        url: "/security-wiki/network/network-introduction/"
+      - title: "2 - Network insfrastrucure"
+        url: "/security-wiki/network/network-insfrastrucure/"
+      - title: "3 - Network security"
+        url: "/security-wiki/network/network-security/"
+        
   - title: "Blue team"
     children:
-      - title: "1 - Phishing"
-        url: "/security-wiki/blue-team/phishing/"
-      - title: "2 - Impersonation"
-        url: "/security-wiki/blue-team/impersonation/"
+      - title: "1 - Typical attack techniques"
+        url: "/security-wiki/blue-team/typical-attack-techniques/"
+      - title: "10 - Intrusion detection & prevention system"
+        url: "/security-wiki/blue-team/intrusion-detection-prevention-system/"
 
 web-exploit:
   - title: "Server side"
@@ -100,12 +116,8 @@ project-management:
     children:
       - title: "1 - Project"
         url: "/project-management/fundamental/project/"
-      - title: "2 - Agile"
-        url: "/project-management/fundamental/agile/"
-      - title: "3 - Scrum"
-        url: "/project-management/fundamental/scrum/"
-      - title: "4 - Kanban"
-        url: "/project-management/fundamental/kanban/"
+      - Title: "2 - Design patterns"
+        url: "/project-management/fundamental/design-patterns/"
   - title: "Implement"
     
 
