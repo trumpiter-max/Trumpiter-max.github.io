@@ -30,26 +30,45 @@ Moreover, 2 other security goals:
     - Passive: use information from system without affecting system resources.
 - Coutermeasure: prevent or mitigate, recovery effects of attacks.
 
-### Unauthorized Disclosure
+### Some types of attacks
 
-- Expose.  
-- Interception.
-- Inference.
-- Intrusion.
+- Unauthorized disclosure:
+  
+  - Expose.  
+  - Interception.
+  - Inference.
+  - Intrusion.
 
-### Deception
+- Deception:
 
-- Masquerade.
-- Falsification.
-- Repudiation.
+  - Masquerade.
+  - Falsification.
+  - Repudiation.
 
-### Disruption.
+- Disruption:
 
-- Incapacitation.
-- Corruption.
-- Obstruction.
+  - Incapacitation.
+  - Corruption.
+  - Obstruction.
 
-### Usurpation.
+- Usurpation:
 
-- Misappropriation.
-- Misuse.
+  - Misappropriation.
+  - Misuse.
+
+## Security design principles
+
+- **Economy of mechanism**: keep the design as simple and small as possible.  
+- **Fail-safe defaults**: unless a subject is given explicit access to an object, it should be denied access to that object.  
+- **Complete mediation**: requiring access requests to be mediated every time, to avoid authority being circumvented through multiple requests.  
+- **Open design**: a system security shouldn't rely on the secrecy of its implementation.  
+- **Separation of privilege**: requires multiple people to approve an action before it can be completed. 
+- **Least privilege**: a security architecture should be designed so that each entity is granted the minimum system resources and authorizations.  
+- **Least common mechanism**: mechanisms used to access resources should not be shared. 
+- **Psychological acceptability**: security mechanisms should not make the resource more difficult to access than if the security mechanisms were not present.
+- **Isolation**: public access systems should be separated from critical resources (data, processes, etc.) to prevent disclosure or tampering.
+- **Encapsulation**: the protected system can only access the data object of the system and these processes can only be invoked from a domain entry point. 
+- **Modularity**: the security mechanism must be generated as separate and protected modules and the security mechanism must be generated using the modular architecture.
+- **Layering**: use of multiple, overlapping protection approaches 
+addressing the people, technology, and operational aspects of information systems
+- **Least astonishment**: should avoid surprising users (in an unpleasant way) at any cost.

@@ -26,15 +26,22 @@ excerpt: ""
 
 A network area (broadcast domain) connect to per network interface.
 
-#### Routing
+#### Router
+
+##### Routing (Control plane)
 
 - Build and maintains a routing table (network map) to forward packet to other routers in network.
 - Directed network automatically or manually (static routes).
 - Network protocols include **connected** which connect to router directly and **learned** which not connect to router over protocol.
+- Control with software or protocol.
+
+##### Forwarding (Data plane)
+
+Collecting data from one device and sending it to another device.
 
 ##### Routing process
 
-Selecting and defining paths for **IP-packet traffic** within or between networks as well as the process of managing network traffic overall.
+Selecting and defining paths for **IP-packet traffic** within or between networks as well as the process of managing network traffic overall. Administrative distance (AD) or route preference is a number of arbitrary unit assigned to dynamic routes, static routes and directly-connected routes.
 
 ##### Routing protocol selection
 
@@ -68,7 +75,8 @@ Routing table entries:
 ### Data transmission over LAN
 
 - **Switch** transmists data among network interfaces.
-- **Switching table** includes interface and MAC address to forward packets to router.
+- **Switching table** includes **network interface** and **MAC address** to forward packets to router.
+- When a machine want to send data to others machine, it will use **ARP** to find right addresses (IP - logical or MAC - physical).
 
 #### Subnet
     
@@ -117,6 +125,8 @@ Using a **manually-configured** routing entry, the IP of machines will not chang
 - Pros: not advertised, less resoures, make network more security, route is known.
 - Cons: more time-consuming, effort for configure, maintainance, and scaling.
 
+**Note**: the machine uses static IP need to set up **default gateway** (IP of interface router) for sending data to router. For connecting the Internet, the machine need setting up default network (0.0.0.0).
+
 Types of static routers:
 
 - **Standard**: route for determined static routes.
@@ -133,20 +143,29 @@ Syntax for static configure:
 #### Dynamic routing - RIP
 
 - Routers share updates between neighbors. 
-- Sending updates to multicast or broadcast address (depend on protocol).
-- Protocol: RIP, IGRP, RIPv2, EIGRP.
+- Sending updates to multicast or broadcast IP 255.255.255.255 or 224.0.0.9 (depend on protocol).
+- Protocol: RIP, IGRP, RIPv2, EIGRP, OSPF.
 
 ##### Distance vector algorithm
 
 - **RIP** uses the **Bellman-Ford** algorithm as its routing algorithm.
     - Sending and receiving routing information.
-    - Calculating the best paths and installing routes in the routing
-table.
+    - Calculating the best paths and installing routes in the routing table.
     - Detecting and reacting to topology changes.
 - Routing updates broadcasted every 30 seconds, using **UDP port 520**.
+- **RIPv2** has more features than v1:
+  - Support **VLSM** & **CIDR**.
+  - Support authentication.
 
+Syntax for **RIPv2** configure:
 
-
+```sh
+    router ip
+    version 2
+    network {ip-machine} # enable RIP on interface advertises the specific network.
+    passive-interface {interface} # prevent sending out unneed updates on LAN.
+    default-information originnate
+```
 
 
 
