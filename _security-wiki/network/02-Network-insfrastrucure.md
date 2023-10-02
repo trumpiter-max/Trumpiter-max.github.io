@@ -137,8 +137,10 @@ Types of static routers:
 Syntax for static configure:
 
 ```sh
-    ip route source-address subnet-mask {exit-interface} destination-address
+    ip route destination-address subnet-mask {next-hop-address-or-outbound-interface} [distance] (default distance for static route is 1)
 ```
+
+Direct connections to router are recognized by router. **Next-hop address** means the IP address of the next router's port having direct connection. **Outbound interface** means the destination port which router sends data.
 
 #### Dynamic routing - RIP
 
